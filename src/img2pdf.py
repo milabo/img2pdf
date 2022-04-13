@@ -906,6 +906,7 @@ class pdfdoc(object):
             self.output_version = "1.5"  # jpeg2000 needs pdf 1.5
         elif imgformat is ImageFormat.CCITTGroup4:
             ofilter = [PdfName.CCITTFaxDecode]
+            self.output_version = "1.4"
         else:
             ofilter = PdfName.FlateDecode
 
